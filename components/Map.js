@@ -12,6 +12,7 @@ const Map = () => {
   const { pickupCoordinates, dropoffCoordinates } = useContext(UberContext)
 
   useEffect(() => {
+     console.log(mapboxgl.accessToken);
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/drakosi/ckvcwq3rwdw4314o3i2ho8tph',
